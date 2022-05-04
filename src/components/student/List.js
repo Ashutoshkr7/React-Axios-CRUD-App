@@ -19,6 +19,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
+
 const useStyles = makeStyles({
   stuListColor: {
     backgroundColor: orange[400],
@@ -34,6 +35,14 @@ const useStyles = makeStyles({
 const List = () => {
   const classes = useStyles();
   const [students, setStudents] = useState([]);
+
+  const handleDelete = async (id) => {
+    await axios.delete(`http://localhost:3333/students/${id}`);
+    const newStudent = students.filter((item) => {
+      return item.id !== id;
+    });
+    setStudents(newStudent);
+  };
 
   useEffect(() => {
     async function getAllStudent() {
@@ -93,7 +102,7 @@ const List = () => {
                       </IconButton>
                     </Tooltip>
                     <Tooltip title="Delete">
-                      <IconButton>
+                      <IconButton onClick={() => handleDelete(student.id)}>
                         <DeleteIcon color="secondary" />
                       </IconButton>
                     </Tooltip>

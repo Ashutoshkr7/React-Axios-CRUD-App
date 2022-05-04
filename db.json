@@ -1,14 +1,9 @@
 {
   "students": [
     {
-      "id": 1,
-      "stuname": "Amit",
-      "email": "amit@example.com"
-    },
-    {
       "id": 2,
-      "stuname": "Sumit",
-      "email": "sumit@example.com"
+      "stuname": "Sumit Saurav",
+      "email": "sumitsaurav@example.com"
     },
     {
       "id": 3,
@@ -26,14 +21,9 @@
       "id": 5
     },
     {
-      "stuname": "Ravi",
-      "email": "ravi@example.com",
+      "stuname": "Ravi Teja",
+      "email": "raviteja@example.com",
       "id": 6
-    },
-    {
-      "stuname": "Suman",
-      "email": "suman@gmail.com",
-      "id": 7
     }
   ]
 }
