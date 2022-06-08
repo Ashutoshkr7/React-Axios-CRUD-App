@@ -6,19 +6,9 @@
       "email": "sumitsaurav@example.com"
     },
     {
-      "id": 3,
-      "stuname": "Gaurav",
-      "email": "gaurav@example.com"
-    },
-    {
-      "stuname": "Sandeep",
-      "email": "sandeep@example.com",
+      "stuname": "Sandeep Kumar",
+      "email": "sandeepkr@example.com",
       "id": 4
-    },
-    {
-      "stuname": "Aman",
-      "email": "aman@example.com",
-      "id": 5
     },
     {
       "stuname": "Ravi Teja",

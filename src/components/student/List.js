@@ -48,7 +48,7 @@ const List = () => {
     async function getAllStudent() {
       try {
         const students = await axios.get("http://localhost:3333/students");
-        console.log(students.data);
+        // console.log(students.data);
         setStudents(students.data);
       } catch (error) {
         console.log("Something is Wrong");
@@ -66,7 +66,7 @@ const List = () => {
           <TableHead>
             <TableRow style={{ backgroundColor: "#616161" }}>
               <TableCell align="center" className={classes.tableHeadCell}>
-                No
+                SL No.
               </TableCell>
               <TableCell align="center" className={classes.tableHeadCell}>
                 Name
